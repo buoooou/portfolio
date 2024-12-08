@@ -1,12 +1,14 @@
-import Container from 'components/BlogContainer'
-import BlogHeader from 'components/BlogHeader'
-import Layout from 'components/BlogLayout'
-import HeroPost from 'components/HeroPost'
-import IndexPageHead from 'components/IndexPageHead'
-import MoreStories from 'components/MoreStories'
-import IntroTemplate from 'intro-template'
-import * as demo from 'lib/demo.data'
-import type { Post, Settings } from 'lib/sanity.queries'
+"use client"
+
+import Container from './BlogContainer'
+import BlogHeader from './BlogHeader'
+import Layout from './BlogLayout'
+import HeroPost from './HeroPost'
+import IndexPageHead from './IndexPageHead'
+import MoreStories from './MoreStories'
+import * as demo from '../lib/demo.data'
+import type { Post, Settings } from '../lib/sanity.queries'
+import SiteHeader from './DockHeader'
 
 export interface IndexPageProps {
   preview?: boolean
@@ -23,8 +25,8 @@ export default function IndexPage(props: IndexPageProps) {
   return (
     <>
       <IndexPageHead settings={settings} />
-
       <Layout preview={preview} loading={loading}>
+        <SiteHeader />
         <Container>
           <BlogHeader title={title} description={description} level={1} />
           {heroPost && (
@@ -39,7 +41,6 @@ export default function IndexPage(props: IndexPageProps) {
           )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
-        <IntroTemplate />
       </Layout>
     </>
   )
