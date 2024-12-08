@@ -1,6 +1,6 @@
-"use client";
+'use client'
 
-import { Button } from "./ui/button";
+import { motion } from 'framer-motion'
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
 
@@ -8,15 +8,18 @@ export function ModeToggle() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <Button
-      variant="ghost"
-      type="button"
-      size="icon"
-      className="px-2"
+    <motion.button
+      className="p-2 rounded-full  bg-zinc-400 dark:bg-slate-200/75"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
     >
-      <SunIcon className="h-[1.2rem] w-[1.2rem] text-neutral-800 dark:hidden dark:text-neutral-200" />
-      <MoonIcon className="hidden h-[1.2rem] w-[1.2rem] text-neutral-800 dark:block dark:text-neutral-200" />
-    </Button>
-  );
+      {theme === "dark" ? (
+        <SunIcon className="w-6 h-6" />
+      ) : (
+        <MoonIcon className="w-6 h-6" />
+      )}
+    </motion.button>
+  )
 }
+
