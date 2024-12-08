@@ -33,7 +33,7 @@ export default function IndexPage(props: IndexPageProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="flex items-center mb-12"
+          className="flex items-center mt-20"
         >
           <div className="mb-8 w-5/6" >
            <h1 className="text-6xl font-bold mb-4">Hi, I'm kuo Zhang</h1>

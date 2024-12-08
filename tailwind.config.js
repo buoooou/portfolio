@@ -5,14 +5,13 @@ module.exports = {
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    './sanity/**/*.{ts,tsx}',
+    './lib/**/*.{ts,tsx}',
+    './plugins/**/*.{ts,tsx}',
   ],
   theme: {
     extend: {
       colors: {
-        'accent-1': '#FAFAFA',
-        'accent-2': '#EAEAEA',
-        'accent-7': '#333',
         success: '#0070f3',
         cyan: '#79FFE1',
         'blue-500': '#2276FC',

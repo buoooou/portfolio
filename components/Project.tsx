@@ -67,7 +67,7 @@ export default function ProjectsSection() {
               animate={{ opacity: 1, y: 0 }}
               className="text-4xl md:text-5xl font-bold tracking-tight mb-4"
             >
-              What is my work
+              This is what I'm doing
             </motion.h2>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
