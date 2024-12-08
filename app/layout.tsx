@@ -12,6 +12,10 @@ export const viewport: Viewport = {
     { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
 }
+export const metadata = {
+  title: 'My Personal Blog',
+  description: 'Welcome to my personal blog and portfolio',
+}
 export default function RootLayout({
   children,
 }: {
@@ -20,12 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
       </body>
