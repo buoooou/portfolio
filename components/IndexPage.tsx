@@ -11,7 +11,7 @@ import type { Post, Settings } from '../lib/sanity.queries'
 import SiteHeader from './DockHeader'
 import { motion } from 'framer-motion'
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
-
+import ProjectsSection from './Project'
 export interface IndexPageProps {
   preview?: boolean
   loading?: boolean
@@ -45,6 +45,7 @@ export default function IndexPage(props: IndexPageProps) {
           </Avatar>
         </motion.section>
         <SiteHeader />
+       <ProjectsSection/>
         <Container>
           <BlogHeader title={title} description={description} level={1} />
           {heroPost && (
