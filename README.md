@@ -1,6 +1,6 @@
-<div>
+
 <img alt="Portfolio" src="https://blog.buouui.com/blog.gif" width="90%">
-</div>
+
 
 # Portfolio
 
