@@ -13,9 +13,9 @@ Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [BuouUI](https://bu
 
 # Features
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
+- Setup only takes a few minutes by adding some environment variables
 - Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, BuouUI
-- Includes a blog
+- Includes a CMS powered by Sanity.io
 - Responsive for different devices
 - Optimized for Next.js and Vercel
 
