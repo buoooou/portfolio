@@ -38,7 +38,7 @@ function HeaderDockItem({
         transition: { type: "spring", bounce: 0.9 },
       }}
       className={cn(
-        "flex aspect-square w-10 items-center justify-center rounded-xl bg-zinc-400 px-0 dark:bg-slate-200/75",
+        "flex aspect-square w-10 items-center justify-center rounded-xl bg-zinc-200 px-0 dark:bg-slate-200/75",
         className
       )}
       {...props}
@@ -115,7 +115,7 @@ export default function SiteHeader() {
           }
         }}
         className={cn(
-          "fixed left-1/2 z-50 mx-auto rounded-2xl bg-zinc-500 text-background shadow-sm shadow-muted-foreground dark:bg-white",
+          "fixed left-1/2 z-50 mx-auto rounded-2xl bg-zinc-300 text-background shadow-sm shadow-muted-foreground dark:bg-white",
           {
             "transition-all duration-300": animationEnded,
             "overflow-hidden": !animationEnded,
