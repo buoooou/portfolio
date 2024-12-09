@@ -1,5 +1,5 @@
 <div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
+<img alt="Portfolio" src="https://blog.buouui.com/blog.gif" width="90%">
 </div>
 
 # Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/buoooou/portfolio&repository-name=portfolio&project-name=portfolio&demo-title=buou-portfolio&demo-description=buou-portfolio&demo-url=https://blog.buouui.com&demo-image=https://blog.buouui.com/blog-home.png&integration-ids=oac_hb2LITYajhRQ0i4QznmKH7gx&template=https://github.com/buoooou/portfolio)
