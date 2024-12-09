@@ -1,4 +1,4 @@
-<div align="center">
+<div>
 <img alt="Portfolio" src="https://github.com/buoooou/portfolio/tree/main/public/blog.gif" width="90%">
 </div>
 
