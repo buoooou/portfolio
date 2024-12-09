@@ -366,7 +366,7 @@ export const Icons = {
       <clipPath id="a">
         <path d="m.92395.110291h36v36h-36z" />
       </clipPath>
-      <g clip-path="url(#a)">
+      <g clipPath="url(#a)">
         <path d="m18.7001 3.11029 17.7761 30.78951h-35.55225z" fill="#fff" />
       </g>
     </svg>

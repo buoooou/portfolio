@@ -166,7 +166,7 @@ export default function SiteHeader() {
                   <span className="sr-only">Vercel</span>
                 </HeaderDockItem>
               </Link>
-              <ModeToggle />
+              {/* <ModeToggle /> */}
             </nav>
           </div>
         </div>
