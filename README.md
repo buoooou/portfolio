@@ -1,6 +1,6 @@
 
-<img alt="Portfolio" src="https://blog.buouui.com/blog.gif" width="90%">
 
+![Product Demo](https://github.com/buoooou/portfolio/blob/main/public/blog.gif)
 
 # Portfolio
 
