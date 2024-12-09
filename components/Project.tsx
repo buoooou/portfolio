@@ -14,7 +14,7 @@ const projects = [
     period: "Dec 2024 - Present",
     description: "Designed, developed and sold animated UI components for developers.",
     image: "/home.jpg",
-    technologies: ["Next.js", "Typescript", "PostgreSQL", "Prisma", "TailwindCSS", "Stripe", "Shadcn UI", "Magic UI"],
+    technologies: ["Next.js", "Typescript", "PostgreSQL", "Prisma", "TailwindCSS", "Stripe", "Shadcn UI",],
     links: {
       website: "https://buouui.com",
     }
@@ -24,7 +24,7 @@ const projects = [
     period: "Nov 2024 - Present",
     description: "Built and launched a powerful Next.js starter kit to help developers create MVPs faster with modern technologies.",
     image: "/home.png",
-    technologies: ["Next.js", "Typescript", "PostgreSQL", "Prisma", "TailwindCSS", "Vercel", "Cloudflare", "AWS"],
+    technologies: ["Next.js", "Typescript", "PostgreSQL", "Prisma", "TailwindCSS", "Vercel", "Cloudflare", "AWS","BuouUI"],
     links: {
       website: "https://next.buouui.com",
     }
@@ -34,7 +34,7 @@ const projects = [
     period: "Dec 2024 - Present",
     description: "Developed an all-in-one AI-powered template integrating GPT, dynamic components, and payment solutions.",
     image: "/ai.png",
-    technologies: ["Next.js", "Typescript", "Replicate", "Runpod", "TailwindCSS", "Stripe", "Sanity"],
+    technologies: ["Next.js", "Typescript", "Replicate", "Runpod", "TailwindCSS", "Stripe", "BuouUI", ],
     links: {
       website: "https://ai.buouui.com",
     }
