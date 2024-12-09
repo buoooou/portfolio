@@ -1,5 +1,5 @@
 <div align="center">
-<img alt="Portfolio" src="https://blog.buouui.com/blog.gif" width="90%">
+<img alt="Portfolio" src="https://github.com/buoooou/portfolio/tree/main/public/blog.gif" width="90%">
 </div>
 
 # Portfolio
