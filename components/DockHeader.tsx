@@ -156,6 +156,16 @@ export default function SiteHeader() {
                   <span className="sr-only">Twitter</span>
                 </HeaderDockItem>
               </Link>
+              <Link
+                href="https://vercel.com/new/clone?repository-url=https://github.com/buoooou/portfolio&repository-name=portfolio&project-name=portfolio&demo-title=buou-portfolio&demo-description=buou-portfolio&demo-url=https://blog.buouui.com&demo-image=https://blog.buouui.com/blog-home.png&integration-ids=oac_hb2LITYajhRQ0i4QznmKH7gx&template=https://github.com/buoooou/portfolio"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <HeaderDockItem>
+                  <Icons.vercel className="h-3 w-3 fill-current" />
+                  <span className="sr-only">Vercel</span>
+                </HeaderDockItem>
+              </Link>
               <ModeToggle />
             </nav>
           </div>
