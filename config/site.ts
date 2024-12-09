@@ -17,8 +17,8 @@ export const siteConfig: SiteConfig = {
   name: "BuouBlog",
   description:
     "This is a opensource blog built with Next.js, Sanity.io and Vercel",
-  url: "https://buouui.com",
-  ogImage: "https://buouui.com/og.jpg",
+  url: "https://blog.buouui.com",
+  ogImage: "https://blog.buouui.com/og.jpg",
   links: {
     twitter: "https://x.com/intent/follow?screen_name=buoooou0",
     github: "https://github.com/buoooou/portfolio",
