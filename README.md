@@ -2,7 +2,12 @@
 <img alt="Portfolio" src="https://blog.buouui.com/blog.gif" width="90%">
 </div>
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/buoooou/portfolio&repository-name=portfolio&project-name=portfolio&demo-title=buou-portfolio&demo-description=buou-portfolio&demo-url=https://blog.buouui.com&demo-image=https://blog.buouui.com/blog-home.png&integration-ids=oac_hb2LITYajhRQ0i4QznmKH7gx&template=https://github.com/buoooou/portfolio)
+1. Click [Fork This Repo](https://github.com/buoooou/portfolio/fork)。
+
+2. Deploy to Vercel:  
+
+# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/buoooou/portfolio-template)
+
 
 Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [BuouUI](https://buouui.com), [Framer Motion](https://www.framer.com/motion), deployed on Vercel.
 
