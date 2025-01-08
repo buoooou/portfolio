@@ -1,122 +1,40 @@
-import { AlertTriangle, AppWindow, ArrowRight, Check, ChevronLeft, ChevronRight, Command, CreditCard, File, FileText, HelpCircle, Image, Instagram, Laptop, Linkedin, Loader2, Lock, LucideProps, Mail, Moon, MoreVertical, PieChartIcon, Pizza, Plus, Settings, SunMedium, Trash, User, X } from "lucide-react";
-
-
-
-
+import {
+  AlertTriangle,
+  ArrowRight,
+  Check,
+  ChevronLeft,
+  ChevronRight,
+  Command,
+  CreditCard,
+  File,
+  FileText,
+  Framer,
+  HelpCircle,
+  Image,
+  Instagram,
+  Laptop,
+  Loader2,
+  Lock,
+  LucideProps,
+  Mail,
+  Moon,
+  MoreVertical,
+  PieChartIcon,
+  Pizza,
+  Plus,
+  Settings,
+  SunMedium,
+  Trash,
+  User,
+  X,
+} from 'lucide-react'
 
 type IconProps = React.HTMLAttributes<SVGElement>
 
 export const Icons = {
-  logo: (props: IconProps) => (
-    <svg
-      {...props}
-      width="88"
-      height="88"
-      viewBox="0 0 88 88"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g filter="url(#filter0_d_0_1)">
-        <rect x="4" width="80" height="80" rx="10" fill="white" />
-        <rect
-          x="8"
-          y="4"
-          width="72"
-          height="72"
-          rx="6"
-          stroke="black"
-          strokeWidth="8"
-        />
-      </g>
-      <g filter="url(#filter1_d_0_1)">
-        <rect x="4" y="30" width="50" height="50" rx="10" fill="#FFFCFC" />
-        <rect
-          x="8"
-          y="34"
-          width="42"
-          height="42"
-          rx="6"
-          stroke="black"
-          strokeWidth="8"
-        />
-      </g>
-      <defs>
-        <filter
-          id="filter0_d_0_1"
-          x="0"
-          y="0"
-          width="88"
-          height="88"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
-        >
-          <feFlood floodOpacity="0" result="BackgroundImageFix" />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset dy="4" />
-          <feGaussianBlur stdDeviation="2" />
-          <feComposite in2="hardAlpha" operator="out" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow_0_1"
-          />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow_0_1"
-            result="shape"
-          />
-        </filter>
-        <filter
-          id="filter1_d_0_1"
-          x="0"
-          y="30"
-          width="58"
-          height="58"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
-        >
-          <feFlood floodOpacity="0" result="BackgroundImageFix" />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset dy="4" />
-          <feGaussianBlur stdDeviation="2" />
-          <feComposite in2="hardAlpha" operator="out" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow_0_1"
-          />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow_0_1"
-            result="shape"
-          />
-        </filter>
-      </defs>
-    </svg>
-  ),
-  lock: Lock,
-  window: AppWindow,
+  logo: Command,
   ins: Instagram,
+  lock: Lock,
   email: Mail,
   close: X,
   spinner: Loader2,
@@ -139,6 +57,7 @@ export const Icons = {
   moon: Moon,
   laptop: Laptop,
   check: Check,
+  framer: Framer,
   statistic: PieChartIcon,
   logout: (props: IconProps) => (
     <svg
@@ -156,6 +75,17 @@ export const Icons = {
       <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
       <polyline points="16 17 21 12 16 7" />
       <line x1="21" x2="9" y1="12" y2="12" />
+    </svg>
+  ),
+  discard: (props: IconProps) => (
+    <svg
+      role="img"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <title>Discord</title>
+      <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" />
     </svg>
   ),
   twitter: (props: IconProps) => (
@@ -243,6 +173,17 @@ export const Icons = {
       />
     </svg>
   ),
+  github: (props: IconProps) => (
+    <svg
+      role="img"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <title>GitHub</title>
+      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+    </svg>
+  ),
   apple: (props: IconProps) => (
     <svg role="img" viewBox="0 0 24 24" {...props}>
       <path
@@ -260,6 +201,17 @@ export const Icons = {
     </svg>
   ),
   discard: (props: IconProps) => (
+    <svg
+      role="img"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <title>Discord</title>
+      <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" />
+    </svg>
+  ),
+  redix: (props: IconProps) => (
     <svg
       role="img"
       viewBox="0 0 24 24"
@@ -397,6 +349,11 @@ export const Icons = {
     >
       <title>shadcn/ui</title>
       <path d="M22.219 11.784 11.784 22.219c-.407.407-.407 1.068 0 1.476.407.407 1.068.407 1.476 0L23.695 13.26c.407-.408.407-1.069 0-1.476-.408-.407-1.069-.407-1.476 0ZM20.132.305.305 20.132c-.407.407-.407 1.068 0 1.476.408.407 1.069.407 1.476 0L21.608 1.781c.407-.407.407-1.068 0-1.476-.408-.407-1.069-.407-1.476 0Z" />
+    </svg>
+  ),
+  stripe: (props: IconProps) => (
+    <svg viewBox="0 0 24 24" className="h-12 w-12 fill-current" {...props}>
+      <path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z" />
     </svg>
   ),
   ts: (props: IconProps) => (

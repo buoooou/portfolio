@@ -9,9 +9,9 @@ import MoreStories from './MoreStories'
 import * as demo from '../lib/demo.data'
 import type { Post, Settings } from '../lib/sanity.queries'
 import SiteHeader from './DockHeader'
-import { motion } from 'framer-motion'
-import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
+
 import ProjectsSection from './Project'
+import { Hero } from './hero-component'
 export interface IndexPageProps {
   preview?: boolean
   loading?: boolean
@@ -26,26 +26,11 @@ export default function IndexPage(props: IndexPageProps) {
 
   return (
     <>
-
       <IndexPageHead settings={settings} />
       <Layout preview={preview} loading={loading}>
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="flex items-center mt-20 px-5"
-        >
-          <div className="mb-8 w-5/6" >
-           <h1 className="text-6xl font-bold mb-4">Hi, I'm kuo Zhang</h1>
-            <p className="text-xl">I am a full-stack engineer, my main technology stack is Nextjs, the founder of BuouUI, and I am committed to making every developer make money.</p>
-          </div>
-          <Avatar className='w-20 h-20'>
-            <AvatarImage src="/zhangkuo.jpg" alt="@zhangkuo" />
-            <AvatarFallback>BU</AvatarFallback>
-          </Avatar>
-        </motion.section>
         <SiteHeader />
-       <ProjectsSection/>
+        <Hero />
+        <ProjectsSection />
         <Container>
           <BlogHeader title={title} description={description} level={1} />
           {heroPost && (
